@@ -14,3 +14,15 @@
   height: 60vh;
   gap: 2rem;
 }
+
+.inicio > div > figure {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.inicio > div > figure > img {
+  background-color: #414141;
+  height: 15rem;
+  width: 10rem;
+  object-fit: cover;
+}
