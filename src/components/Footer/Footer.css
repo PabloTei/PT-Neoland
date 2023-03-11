@@ -1,4 +1,12 @@
 footer {
-    background-color: #423d41;
-    height: 24vh;
+  background-color: #423d41;
+  height: 24vh;
+  color: whitesmoke;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+footer > div > ul {
+  display: flex;
+  gap: 7px;
 }

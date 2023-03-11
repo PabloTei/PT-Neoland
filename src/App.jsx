@@ -2,12 +2,12 @@ import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
 
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Inicio from './pages/Inicio/Inicio';
 import Notfound from './pages/Notfound/Notfound';
 import Peliculas from './pages/Peliculas/Peliculas';
 import Series from './pages/Series/Series';
-import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/series" element={<Series />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
