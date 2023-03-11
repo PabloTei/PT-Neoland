@@ -21,7 +21,7 @@ const Series = () => {
         );
         const arrayFilterSerieLess = arrayFilterSerie.slice(0, 20);
         const copySeries = [...arrayFilterSerieLess];
-        const seriesSort = copySeries.sort((a, b) => (a.title < b.title ? -1: +1))
+        const seriesSort = copySeries.sort((a, b) => (a.title < b.title ? -1 : +1));
         setFilterSeries(seriesSort);
       });
   }, [filterSeries]);

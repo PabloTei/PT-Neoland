@@ -2,12 +2,12 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <header>
-      <div>
+    <header className='header'>
         <h2>DEMO Streaming</h2>
-        <a>Log in</a>
-        <button>Start your free trial</button>
-      </div>
+          <div>
+          <a>Log in</a>
+          <button>Start your free trial</button>
+        </div>
     </header>
   );
 };

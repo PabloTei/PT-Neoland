@@ -21,7 +21,7 @@ const Peliculas = () => {
         );
         const arrayFilterMovieLess = arrayFilter.slice(0, 20);
         const copyMovies = [...arrayFilterMovieLess];
-        const moviesSort = copyMovies.sort((a, b) => (a.title < b.title ? -1: +1))
+        const moviesSort = copyMovies.sort((a, b) => (a.title < b.title ? -1 : +1));
         setFilterMovies(moviesSort);
       });
   }, [filterMovies]);
