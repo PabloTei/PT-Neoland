@@ -4,6 +4,11 @@ footer {
   color: whitesmoke;
   font-weight: lighter;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 footer > div > ul {
