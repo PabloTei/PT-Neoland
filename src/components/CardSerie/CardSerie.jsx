@@ -4,7 +4,7 @@ const CardSerie = ({ serie }) => {
   return (
     <figure className="poster">
       <img src={serie.images['Poster Art'].url} alt={serie.title} />
-      <h2>{serie.title}</h2>
+      <h3>{serie.title}</h3>
     </figure>
   );
 };

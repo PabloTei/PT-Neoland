@@ -7,3 +7,24 @@
   list-style-type: none;
   color: inherit;
 }
+
+main {
+  background-color: whitesmoke;
+  color: #414141;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+.poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.poster:hover {
+  opacity: 70%;
+}

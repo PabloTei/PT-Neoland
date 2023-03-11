@@ -1,0 +1,12 @@
+.series {
+  background-color: #414141;
+  color: whitesmoke;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+}
+
+.grid-peliculas {
+  padding-top: 2rem;
+}

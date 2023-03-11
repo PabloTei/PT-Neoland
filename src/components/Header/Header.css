@@ -1,31 +1,31 @@
 .header {
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    background-color: #027FFE;
-    color: whitesmoke;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  background-color: #027ffe;
+  color: whitesmoke;
 }
 
 .header > div {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 2rem;
-    gap: 2rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  gap: 2rem;
 }
 
 .header > h2 {
-    margin-left: 2rem;
-    display: flex;
-    width: 20rem;
-    align-items: center;
-    margin-left: 10rem;
+  margin-left: 2rem;
+  display: flex;
+  width: 20rem;
+  align-items: center;
+  margin-left: 10rem;
 }
 
 .header > div > button {
-    background-color: #423D41;
-    height: 2rem;
-    width: 10rem;
-    font-size: 15px;
+  background-color: #423d41;
+  height: 2rem;
+  width: 10rem;
+  font-size: 15px;
 }

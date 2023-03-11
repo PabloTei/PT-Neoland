@@ -28,7 +28,7 @@ const Peliculas = () => {
 
   return (
     <main>
-      <h2>Popular Movies</h2>
+      <h2 className="peliculas">Popular Movies</h2>
       <div className="grid-peliculas">
         {filterMovies.map((movie) => (
           <CardMovie key={movie.title} movie={movie} />

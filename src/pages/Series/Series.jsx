@@ -28,7 +28,7 @@ const Series = () => {
 
   return (
     <main>
-      <h2>Popular Series</h2>
+      <h2 className="series">Popular Series</h2>
       <div className="grid-peliculas">
         {filterSeries.map((serie) => (
           <CardSerie key={serie.title} serie={serie} />
