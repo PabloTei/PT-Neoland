@@ -1,0 +1,12 @@
+.grid-peliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 9em);
+  gap: 2rem;
+  justify-content: center;
+  justify-content: center;
+}
+
+.poster {
+  text-align: center;
+  object-fit: cover;
+}
