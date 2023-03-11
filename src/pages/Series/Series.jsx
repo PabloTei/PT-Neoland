@@ -19,7 +19,8 @@ const Series = () => {
         const arrayFilterSerie = dataSerie.filter(
           (serie) => serie.programType === 'series' && serie.releaseYear >= 2010,
         );
-        setFilterSeries(arrayFilterSerie);
+        const arrayFilterSerieLess = arrayFilterSerie.slice(0, 20);
+        setFilterSeries(arrayFilterSerieLess);
       });
   }, [filterSeries]);
 
