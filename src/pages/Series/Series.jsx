@@ -8,6 +8,7 @@ import CardSerie from '../../components/CardSerie/CardSerie';
 const Series = () => {
   const [dataSerie, setDataSerie] = useState([]);
   const [filterSeries, setFilterSeries] = useState([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     axios
@@ -23,6 +24,7 @@ const Series = () => {
         const copySeries = [...arrayFilterSerieLess];
         const seriesSort = copySeries.sort((a, b) => (a.title < b.title ? -1 : +1));
         setFilterSeries(seriesSort);
+        setLoaded(true);
       });
   }, [filterSeries]);
 
@@ -30,9 +32,20 @@ const Series = () => {
     <main>
       <h2 className="series">Popular Series</h2>
       <div className="grid-peliculas">
-        {filterSeries.map((serie) => (
-          <CardSerie key={serie.title} serie={serie} />
-        ))}
+        {loaded ? (
+          filterSeries.map((serie) => (
+            <div key={serie.title}>
+              <CardSerie serie={serie} />
+              <button onClick={(ev) => (ev.target.nextSibling.open = true)}>{serie.title}</button>
+              <dialog>
+                <h3>{serie.title}</h3>
+                <button onClick={(ev) => (ev.target.parentNode.open = false) }>X</button>
+              </dialog>
+            </div>
+          ))
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
     </main>
   );

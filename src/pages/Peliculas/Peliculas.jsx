@@ -8,6 +8,7 @@ import CardMovie from '../../components/CardMovie/CardMovie';
 const Peliculas = () => {
   const [data, setData] = useState([]);
   const [filterMovies, setFilterMovies] = useState([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     axios
@@ -23,6 +24,7 @@ const Peliculas = () => {
         const copyMovies = [...arrayFilterMovieLess];
         const moviesSort = copyMovies.sort((a, b) => (a.title < b.title ? -1 : +1));
         setFilterMovies(moviesSort);
+        setLoaded(true);
       });
   }, [filterMovies]);
 
@@ -30,9 +32,11 @@ const Peliculas = () => {
     <main>
       <h2 className="peliculas">Popular Movies</h2>
       <div className="grid-peliculas">
-        {filterMovies.map((movie) => (
-          <CardMovie key={movie.title} movie={movie} />
-        ))}
+        {loaded ? (
+          filterMovies.map((movie) => <CardMovie key={movie.title} movie={movie} />)
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
     </main>
   );
